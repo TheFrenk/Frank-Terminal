@@ -87,7 +87,7 @@ export const COMMANDS = {
   projects() {
     gap();
     return typeLines([
-      '<span class="c b">~/projects</span>  <span class="dim">(4 items)</span>',
+      '<span class="c b">~/projects</span>  <span class="dim">(2 items)</span>',
       "",
       {
         html: '<div class="card ci"><div class="card-title">01 · FaceitHunter</div><div class="kv"><span class="k">stack</span><span><span class="g">Go</span> · PostgreSQL · Redis</span></div><div class="kv"><span class="k">url</span><span class="c">faceithunter.com</span></div><div class="tags"><span class="tag g">featured</span><span class="tag c">live</span></div></div>',
@@ -141,7 +141,7 @@ export const COMMANDS = {
       '<span class="c b">// contact.sh</span>',
       "",
       {
-        html: '<div class="card hi"><div class="card-title">📬 Contact</div><div class="kv"><span class="k">email</span><a href="mailto:frank@example.com" style="color:var(--cyan)">frank@example.com</a></div><div class="kv"><span class="k">status</span><span class="g">● open to work</span></div></div>',
+        html: '<div class="card hi"><div class="card-title">📬 Contact</div><div class="kv"><span class="k">email</span><a href="mailto:thefrenky30@gmail.com" style="color:var(--cyan)">thefrenky30@gmail.com</a></div><div class="kv"><span class="k">status</span><span class="g">● open to work</span></div></div>',
         delay: 30,
       },
       "",

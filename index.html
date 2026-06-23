@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>frank@dev:~$</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/terminal.css" />
+        <link rel="stylesheet" href="css/components.css" />
+    </head>
+    <body>
+        <div class="window">
+            <div class="titlebar">
+                <div class="dots">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                </div>
+                <span class="tb-title">frank@dev — bash — 220×50</span>
+            </div>
+
+            <div class="body">
+                <div class="sidebar">
+                    <span class="sb-group-label">Files</span>
+                    <button class="sb-btn active" data-cmd="about">
+                        <span class="sb-icon">👤</span>about.txt
+                    </button>
+                    <button class="sb-btn" data-cmd="skills">
+                        <span class="sb-icon">⚡</span>skills.go
+                    </button>
+                    <button class="sb-btn" data-cmd="projects">
+                        <span class="sb-icon">📁</span>projects/
+                    </button>
+                    <button class="sb-btn" data-cmd="contact">
+                        <span class="sb-icon">📬</span>contact.sh
+                    </button>
+                    <span class="sb-group-label">Run</span>
+                    <button class="sb-btn" data-cmd="whoami">
+                        <span class="sb-icon">$</span>whoami
+                    </button>
+                    <button class="sb-btn" data-cmd="neofetch">
+                        <span class="sb-icon">$</span>neofetch
+                    </button>
+                    <button class="sb-btn" data-cmd="ls">
+                        <span class="sb-icon">$</span>ls
+                    </button>
+                    <button class="sb-btn" data-cmd="clear">
+                        <span class="sb-icon">✕</span>clear
+                    </button>
+                    <span class="sb-group-label">Links</span>
+                    <button class="sb-btn" data-cmd="github">
+                        <span class="sb-icon">🐙</span>github
+                    </button>
+                    <button class="sb-btn" data-cmd="linkedin">
+                        <span class="sb-icon">💼</span>linkedin
+                    </button>
+                </div>
+
+                <div class="terminal">
+                    <div class="output" id="output"></div>
+                    <div class="input-row">
+                        <span class="prompt-txt">
+                            <span class="g b">frank</span
+                            ><span class="dim">@</span><span class="c">dev</span
+                            ><span class="dim">:</span><span class="y">~</span
+                            ><span class="dim">$&nbsp;</span>
+                        </span>
+                        <input
+                            class="cmd-input"
+                            id="cmdInput"
+                            type="text"
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="Terminal input"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="statusbar">
+                <span class="sb-ok">● online</span>
+                <span>bash 5.2</span>
+                <span>~</span>
+                <div class="sb-right">
+                    <span>Go 1.22</span>
+                    <span>PHP 8.3</span>
+                    <span id="sbTime">--:--:--</span>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="js/boot.js"></script>
+    </body>
+</html>

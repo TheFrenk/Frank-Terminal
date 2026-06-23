@@ -1,0 +1,159 @@
+.ln {
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.ln.gap {
+    height: 10px;
+}
+
+.ln.fade {
+    animation: fadein 0.18s ease both;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 4px 0;
+    background: #161619;
+    min-width: 280px;
+}
+
+.card.hi {
+    border-color: rgba(0, 255, 135, 0.2);
+    box-shadow: 0 0 18px rgba(0, 255, 135, 0.04);
+}
+
+.card.ci {
+    border-color: rgba(0, 212, 255, 0.18);
+}
+
+.card-title {
+    color: var(--cyan);
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.kv {
+    display: flex;
+    gap: 12px;
+    font-size: 12.5px;
+    margin: 2px 0;
+}
+
+.kv .k {
+    color: var(--faint);
+    flex-shrink: 0;
+    min-width: 60px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.tag.g {
+    border-color: rgba(0, 255, 135, 0.25);
+    color: var(--green);
+    background: none;
+}
+
+.tag.c {
+    border-color: rgba(0, 212, 255, 0.25);
+    color: var(--cyan);
+    background: none;
+}
+
+.tag.p {
+    border-color: rgba(189, 147, 249, 0.25);
+    color: var(--purple);
+    background: none;
+}
+
+.tag.y {
+    border-color: rgba(255, 216, 102, 0.25);
+    color: var(--yellow);
+    background: none;
+}
+
+.prow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 3px 0;
+    font-size: 12.5px;
+}
+.plabel {
+    color: var(--muted);
+    width: 110px;
+    flex-shrink: 0;
+}
+.pbar {
+    flex: 1;
+    height: 7px;
+    background: #222228;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.pfill {
+    height: 100%;
+    border-radius: 2px;
+    width: 0;
+    transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pfill.g {
+    background: var(--green);
+}
+
+.pfill.c {
+    background: var(--cyan);
+}
+
+.pfill.p {
+    background: var(--purple);
+}
+
+.pfill.y {
+    background: var(--yellow);
+}
+
+.ppct {
+    color: var(--faint);
+    font-size: 12px;
+    width: 32px;
+    text-align: right;
+}
+
+.ascii {
+    color: var(--green);
+    font-size: 12px;
+    line-height: 1.3;
+    opacity: 0.85;
+}

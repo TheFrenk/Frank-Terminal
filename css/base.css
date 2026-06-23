@@ -1,0 +1,80 @@
+:root {
+    --bg: #0d0d0f;
+    --bg2: #111114;
+    --surface: #16161a;
+    --border: rgba(255, 255, 255, 0.07);
+    --text: #c8c8d0;
+    --muted: #555560;
+    --faint: #2e2e38;
+    --green: #00ff87;
+    --cyan: #00d4ff;
+    --yellow: #ffd866;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --font: "JetBrains Mono", "Fira Code", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 3px,
+        rgba(0, 0, 0, 0.06) 3px,
+        rgba(0, 0, 0, 0.06) 4px
+    );
+}
+
+/* colour helpers */
+.g {
+    color: var(--green);
+}
+.c {
+    color: var(--cyan);
+}
+.y {
+    color: var(--yellow);
+}
+.p {
+    color: var(--purple);
+}
+.r {
+    color: var(--red);
+}
+.o {
+    color: var(--orange);
+}
+.w {
+    color: #f0f0f5;
+}
+.dim {
+    color: var(--faint);
+}
+.b {
+    font-weight: 700;
+}
